@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.app.pace.mediasnota.FinalActivity"
+    android:background="#FFFFFF"
+    android:id="@+id/FinalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATEMÁTICA"
+        android:id="@+id/txtmatf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matlabel"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtmatf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="NOTA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PORTUGUÊS"
+        android:id="@+id/txtportf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/matlabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/portlabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtportf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGLÊS"
+        android:id="@+id/txtingf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/portlabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inglabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtingf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUÍMICA"
+        android:id="@+id/txtquimf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/inglabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quimlabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtquimf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FÍSICA"
+        android:id="@+id/txtfisf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/quimlabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fislabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtfisf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIOLOGIA"
+        android:id="@+id/txtbiof"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/fislabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/biolabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtbiof"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HISTÓRIA"
+        android:id="@+id/txthistf"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/biolabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/histlabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txthistf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GEOGRAFIA"
+        android:id="@+id/txtgeof"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/histlabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geolabel"
+        android:textSize="20dp"
+        android:text="NOTA"
+        android:layout_below="@+id/txtgeof"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+package com.app.pace.mediasnota;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+
+public class Activity3 extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity3);
+        Intent in = getIntent();
+        final Float m1 = in.getFloatExtra("im1", 1);
+        final Float p1 = in.getFloatExtra("ip1", 1);
+        final Float i1 = in.getFloatExtra("ii1", 1);
+        final Float q1 = in.getFloatExtra("iq1", 1);
+        final Float f1 = in.getFloatExtra("if1", 1);
+        final Float b1 = in.getFloatExtra("ib1", 1);
+        final Float h1 = in.getFloatExtra("ih1", 1);
+        final Float g1 = in.getFloatExtra("ig1", 1);
+
+        final Float m2 = in.getFloatExtra("im2", 1);
+        final Float p2 = in.getFloatExtra("ip2", 1);
+        final Float i2 = in.getFloatExtra("ii2", 1);
+        final Float q2 = in.getFloatExtra("iq2", 1);
+        final Float f2 = in.getFloatExtra("if2", 1);
+        final Float b2 = in.getFloatExtra("ib2", 1);
+        final Float h2 = in.getFloatExtra("ih2", 1);
+        final Float g2 = in.getFloatExtra("ig2", 1);
+
+        final EditText em3 = (EditText) findViewById(R.id.mat3);
+        final EditText ep3 = (EditText) findViewById(R.id.port3);
+        final EditText ei3 = (EditText) findViewById(R.id.ing3);
+        final EditText eq3 = (EditText) findViewById(R.id.quim3);
+        final EditText ef3 = (EditText) findViewById(R.id.fis3);
+        final EditText eb3 = (EditText) findViewById(R.id.bio3);
+        final EditText eh3 = (EditText) findViewById(R.id.hist3);
+        final EditText eg3 = (EditText) findViewById(R.id.geo3);
+        
+        Button btnThree = (Button) findViewById(R.id.buttonb3);
+        btnThree.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View v){
+
+                Intent i = new Intent(getApplicationContext(), FinalActivity.class);
+                float m3 = Float.parseFloat(em3.getText().toString());
+                float p3 = Float.parseFloat(ep3.getText().toString());
+                float i3 = Float.parseFloat(ei3.getText().toString());
+                float q3 = Float.parseFloat(eq3.getText().toString());
+                float f3 = Float.parseFloat(ef3.getText().toString());
+                float b3 = Float.parseFloat(eb3.getText().toString());
+                float h3 = Float.parseFloat(eh3.getText().toString());
+                float g3 = Float.parseFloat(eg3.getText().toString());
+                i.putExtra("im1", m1);
+                i.putExtra("ip1", p1);
+                i.putExtra("ii1", i1);
+                i.putExtra("iq1", q1);
+                i.putExtra("if1", f1);
+                i.putExtra("ib1", b1);
+                i.putExtra("ih1", h1);
+                i.putExtra("ig1", g1);
+                i.putExtra("im2", m2);
+                i.putExtra("ip2", p2);
+                i.putExtra("ii2", i2);
+                i.putExtra("iq2", q2);
+                i.putExtra("if2", f2);
+                i.putExtra("ib2", b2);
+                i.putExtra("ih2", h2);
+                i.putExtra("ig2", g2);
+                i.putExtra("im3", m3);
+                i.putExtra("ip3", p3);
+                i.putExtra("ii3", i3);
+                i.putExtra("iq3", q3);
+                i.putExtra("if3", f3);
+                i.putExtra("ib3", b3);
+                i.putExtra("ih3", h3);
+                i.putExtra("ig3", g3);
+                startActivity(i);
+
+            }
+
+
+        });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_bim3, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
